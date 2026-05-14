@@ -125,5 +125,20 @@
   .content-grid {
     grid-template-columns: 1fr;
     text-align: center;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .text-box h2 {
+    font-size: 2rem;
+  }
+  
+  .about-content, .values-section {
+    padding: 4rem 5%;
   }
 }

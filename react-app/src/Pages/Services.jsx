@@ -12,7 +12,7 @@ const Services = () => {
       title: "Dine-In Experience",
       desc: "Enjoy your meal in our warm, vibrant atmosphere designed for comfort and great vibes.",
       icon: <IoRestaurantOutline />,
-      features: ["Premium Seating", "Live Music Weekends", "Free Wi-Fi"],
+      features: ["Premium Seating", "Chef's Specials", "Free Wi-Fi"],
     },
     {
       title: "Swift Takeaway",

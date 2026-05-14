@@ -1,13 +1,13 @@
 import React from 'react';
-import { IoMusicalNotesOutline, IoLeafOutline, IoFlashOutline, IoPeopleOutline } from 'react-icons/io5';
+import { IoColorWandOutline, IoLeafOutline, IoFlashOutline, IoPeopleOutline } from 'react-icons/io5';
 import './Experience.css';
 
 const Experience = () => {
   const vibes = [
     {
-      icon: <IoMusicalNotesOutline />,
-      title: "Live Music",
-      desc: "Soulful tunes to accompany your kingly feast every weekend."
+      icon: <IoColorWandOutline />,
+      title: "Chef's Art",
+      desc: "Every dish is a masterpiece, crafted with passion and culinary expertise."
     },
     {
       icon: <IoLeafOutline />,

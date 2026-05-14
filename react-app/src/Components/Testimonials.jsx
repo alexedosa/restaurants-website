@@ -13,13 +13,19 @@ const Testimonials = () => {
     {
       name: "Sarah Jenkins",
       role: "Regular Customer",
-      text: "I love the vibe here. The live music weekends and the fresh Kunu make it the perfect spot for me.",
+      text: "I love the vibe here. The incredible chef's specials and the fresh Kunu make it the perfect spot for me.",
       rating: 5
     },
     {
       name: "Chidi Okafor",
       role: "Burger Enthusiast",
       text: "Quality you can taste. You can tell the ingredients are fresh. Definitely my go-to spot now.",
+      rating: 5
+    },
+    {
+      name: "Efe Williams",
+      role: "Burger Lover",
+      text: "The spicy wings are out of this world! Perfect balance of heat and flavor. 10/10 recommendation.",
       rating: 5
     }
   ];

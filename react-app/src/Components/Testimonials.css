@@ -58,4 +58,13 @@
   .testimonials-section {
     padding: 6rem 5%;
   }
+  
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .testimonial-card {
+    padding: 2.5rem 1.5rem;
+  }
 }

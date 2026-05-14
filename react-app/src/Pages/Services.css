@@ -123,6 +123,15 @@
 
 @media (max-width: 768px) {
   .cta-box {
-    padding: 3rem 2rem;
+    padding: 3rem 2.5rem;
+  }
+  
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .service-card {
+    padding: 2.5rem 1.5rem;
   }
 }

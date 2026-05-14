@@ -56,4 +56,13 @@
   .experience-section {
     padding: 6rem 5%;
   }
+  
+  .vibes-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .vibe-card {
+    padding: 2.5rem 1.5rem;
+  }
 }
