@@ -1,76 +1,103 @@
 .burger-menu {
-  padding: 4rem 2rem;
-  background-color: #f5f5f5;
+  padding: 6rem 5%;
+  background-color: var(--background);
 }
 
-.burger-menu h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: 2.5rem;
-  color: #333;
-}
 
 .burger-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
 .burger-card {
-  background: white;
-  border-radius: 10px;
-  padding: 1.5rem;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  background: var(--surface);
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid var(--glass-border);
+  transition: var(--transition);
+  position: relative;
 }
 
-/* CUSTOM MADE BY MZN HEHE, TO ADD SMOOTH TRANSITION OF SLEEK FEEL */
 .burger-card:hover {
-  transform: translateY(-10px); 
-
+  transform: translateY(-10px);
+  border-color: var(--primary);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
 }
 
-.burger-card img {
-  width: 200px;
-  height: 200px;
+.card-image {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 1rem;
+  transition: var(--transition);
 }
 
-.burger-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  color: #333;
+.burger-card:hover .card-image img {
+  transform: scale(1.1);
 }
 
-.burger-card .description {
-  color: #666;
-  margin-bottom: 1rem;
-  line-height: 1.4;
-}
-
-.burger-card .price {
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: #e65100;
-  margin-bottom: 1rem;
-}
-
-.order-btn {
-  background-color: #e65100;
+.price-tag {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: var(--primary);
   color: white;
-  border: none;
-  padding: 0.8rem 1.5rem;
-  border-radius: 25px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  padding: 0.5rem 1.2rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
-.order-btn:hover {
-  background-color: #ff6f00;
+.card-info {
+  padding: 2rem;
+  text-align: left;
+}
+
+.card-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: var(--text);
+}
+
+.card-info .description {
+  color: var(--text-dim);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.card-btn {
+  width: 100%;
+  padding: 1rem;
+  background: var(--glass);
+  color: var(--text);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  font-weight: 700;
+  transition: var(--transition);
+}
+
+.burger-card:hover .card-btn {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .section-header h2 {
+    font-size: 2.2rem;
+  }
+  
+  .burger-grid {
+    grid-template-columns: 1fr;
+  }
 }

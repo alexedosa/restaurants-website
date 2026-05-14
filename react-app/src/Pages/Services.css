@@ -1,0 +1,128 @@
+.services-hero {
+  padding: 6rem 5%;
+  text-align: center;
+}
+
+.services-hero .subtitle {
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.services-hero h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: 1.5rem;
+}
+
+.services-hero p {
+  font-size: 1.2rem;
+  color: var(--text-dim);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.services-grid-section {
+  padding: 4rem 5%;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: var(--surface);
+  padding: 3.5rem 2.5rem;
+  border-radius: 30px;
+  border: 1px solid var(--glass-border);
+  transition: var(--transition);
+  text-align: left;
+}
+
+.service-card:hover {
+  transform: translateY(-12px);
+  border-color: var(--primary);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.service-icon {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+.service-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.service-card p {
+  color: var(--text-dim);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.service-features {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.service-features li {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.cta-section {
+  padding: 8rem 5%;
+}
+
+.cta-box {
+  background: linear-gradient(135deg, var(--primary) 0%, #3c1d13 100%);
+  padding: 5rem;
+  border-radius: 40px;
+  text-align: center;
+  color: white;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cta-box h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 1.5rem;
+}
+
+.cta-box p {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  opacity: 0.9;
+}
+
+.cta-btn {
+  padding: 1.2rem 3rem;
+  background: white;
+  color: var(--primary);
+  border: none;
+  border-radius: 50px;
+  font-weight: 800;
+  font-size: 1.1rem;
+  transition: var(--transition);
+}
+
+.cta-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+  .cta-box {
+    padding: 3rem 2rem;
+  }
+}

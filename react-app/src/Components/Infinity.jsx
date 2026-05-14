@@ -2,35 +2,33 @@ import "../App.css"
 
 function Infinity() {
     return (
-<section class="carousel-section">
-  <div class="container">
-    <h3 class="section-title">Our <span style={{color: "rgb(78, 35, 35)"}}>TOP </span>Picks</h3>
-    <div class="carousel" tabindex="0">
-      <div class="carousel-track">
-        <div class="pill">Zobo</div>
-        <div class="pill">Chapman</div>
-        <div class="pill">Kunu</div>
-        <div class="pill">Palm Wine</div>
-        <div class="pill">Fura da Nono</div>
-        <div class="pill">Tigernut Milk</div>
-        {/* <!-- duplicated for infinite scroll --> */}
-        <div class="pill">Zobo</div>
-        <div class="pill">Chapman</div>
-        <div class="pill">Kunu</div>
-        <div class="pill">Palm Wine</div>
-        <div class="pill">Fura da Nono</div>
-        <div class="pill">Tigernut Milk</div>
-        {/* <!-- duplicated for infinite scroll --> */}
-        <div class="pill">Zobo</div>
-        <div class="pill">Chapman</div>
-        <div class="pill">Kunu</div>
-        <div class="pill">Palm Wine</div>
-        <div class="pill">Fura da Nono</div>
-        <div class="pill">Tigernut Milk</div>
-      </div>
-    </div>
-  </div>
-</section>
+      <section className="carousel-section">
+        <h3 className="section-title">Royal <span className="highlight">Drinks</span> Picks</h3>
+        <div className="carousel">
+          <div className="carousel-track">
+            <div className="pill">Zobo</div>
+            <div className="pill">Chapman</div>
+            <div className="pill">Kunu</div>
+            <div className="pill">Palm Wine</div>
+            <div className="pill">Fura da Nono</div>
+            <div className="pill">Tigernut Milk</div>
+            {/* <!-- duplicated for infinite scroll --> */}
+            <div className="pill">Zobo</div>
+            <div className="pill">Chapman</div>
+            <div className="pill">Kunu</div>
+            <div className="pill">Palm Wine</div>
+            <div className="pill">Fura da Nono</div>
+            <div className="pill">Tigernut Milk</div>
+            {/* <!-- duplicated for infinite scroll --> */}
+            <div className="pill">Zobo</div>
+            <div className="pill">Chapman</div>
+            <div className="pill">Kunu</div>
+            <div className="pill">Palm Wine</div>
+            <div className="pill">Fura da Nono</div>
+            <div className="pill">Tigernut Milk</div>
+          </div>
+        </div>
+      </section>
     );
 }
 

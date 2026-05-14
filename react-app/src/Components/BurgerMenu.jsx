@@ -1,19 +1,29 @@
-import React from 'react';
 import { burgers } from '../data/burgers';
+import { useCart } from '../context/CartContext';
 import './BurgerMenu.css';
-// import burgerImage from "../assets/burger.png"
 
 const BurgerMenu = () => {
+  const { addToCart } = useCart();
+
   return (
     <section className="burger-menu">
-      <h2>Our Signature Dishes</h2>
+      <div className="section-header">
+        <span className="subtitle">Popular Choices</span>
+        <h2>Our Signature Dishes</h2>
+        <div className="underline"></div>
+      </div>
       <div className="burger-grid">
         {burgers.map((burger) => (
           <div key={burger.id} className="burger-card">
-            <img src={burger.img} alt={burger.name} />
-            <h3>{burger.name}</h3>
-            <p className="price">{burger.price}</p>
-            <button className="order-btn">Order Now</button>
+            <div className="card-image">
+              <img src={burger.img} alt={burger.name} />
+              <div className="price-tag">{burger.price}</div>
+            </div>
+            <div className="card-info">
+              <h3>{burger.name}</h3>
+              <p className="description">Experience the perfect blend of fresh ingredients and secret spices.</p>
+              <button className="card-btn" onClick={() => addToCart(burger)}>Add to Cart</button>
+            </div>
           </div>
         ))}
       </div>
